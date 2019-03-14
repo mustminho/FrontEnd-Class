@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <style>
+        div#blue{
+            color:blue;
+            border: lpx solid blue;
+        }
+        div#red {
+            color:red;
+            border: lpx solid red;
+        }
+    </style>
+<meta charset="utf-8">
+<body>
+
+    <div id ="blue">
+        <p>파란구역</p>
+        <p>파란구역</p>
+    </div>
+
+    <div id="red">
+        <p>빨간구역</p>
+        <p>빨간구역</p>
+    </div>
+
+</body>
+</html>
+
+

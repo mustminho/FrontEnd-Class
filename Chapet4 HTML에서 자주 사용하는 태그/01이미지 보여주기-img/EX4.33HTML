@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<style>
+table, th, td {
+    border: lpx solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+}
+td{
+    text-align: right;
+}
+
+table#td_01 {
+    width: 100%;
+    background-color: yellow;
+}
+
+</style>
+<meta charset="utf-8">
+<body>
+
+<table style="width:100%">
+<!--앞의 예제와 동일하여 생략합니다. -->
+</table>
+
+<table id="td_01">
+    <caption>시험점수</caption>
+    <tr>
+        <th colspan="2">이름</th>
+        <th>점수</th>
+    </tr>
+    <tr>
+        <td>진</td>
+        <td>정원</td>
+        <td>80</td>
+    </tr>
+    <tr>
+</table>
+
+</body>
+</html>

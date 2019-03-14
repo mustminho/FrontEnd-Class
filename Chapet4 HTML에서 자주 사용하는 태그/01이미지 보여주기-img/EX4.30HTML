@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<style>
+table, th, td {
+    border: lpx solid black;
+    border-collapse: collapse;
+}
+th, td{
+    padding: 5px;
+}
+</style>
+<meta charset="utf-8">
+<body>
+
+<table style="width:100%">
+    <tr>
+        <th colspan="2">이름</th>
+        <th>점수</th>
+    </tr>
+    <tr>
+        <td>진</td>
+        <td>정원</td>
+        <td>80</td>
+        </tr>
+<!--앞의 예제와 동일하여 생략합니다. -->
+</table>
+
+</body>
+</html>
