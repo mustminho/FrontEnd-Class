@@ -1,0 +1,35 @@
+<script>
+    $(document).ready(fuction()){
+        user={
+            username: undefined,
+            paddword: undefined
+        };
+        $('#login').click(fuction()){
+            if(!$('#username').val()){
+                return;
+            }
+            if(!user.username){
+                //현재 상태가 로그아웃
+                user.username = $('#username').val();
+                user.password = $('#password').val();
+                $('#usernaem').hide();
+                $('#password').hide();
+                $('#login').text('login');
+                $('[name=login]').text('logout');
+                alert(user.username + '님이 로그인 하셨습니다.');
+            }
+            else {
+                //현재 상태가 로그인
+                user.username = undefined;
+                user.password = undefined;
+                $('#username').val();
+                $('#password').val();
+                $('#username').show();
+                $('#password').show();
+                $('#login').text('login');
+                $('[name=login]').hide();
+                alert('로그인 하셨습니다.')
+            }
+        });
+    });
+    </script>
