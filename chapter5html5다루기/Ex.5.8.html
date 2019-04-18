@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    #div {width:350px;height:70px;padding:10px;border:1px solid#aaaaaa;}
+    </style>
+    <script>
+    
+    function dragover(event) {
+        event.preventDefault();
+    }
+
+    function dragstart(event) {
+        event.dataTransfer.setData("dragElementId",event.target.id);
+    }
+
+    function drop(event) {
+        var data = event.dataTransfer.getData("dragElementId");
+        event.target.appendChild(document.getElementById(data));
+    } 
+    </script>
+
+<meta charset="utf-8">
+
+</body>
+</html>

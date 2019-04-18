@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<p>위치정보를 가져오기 위해서 버튼을 클릭하시오.</p>
+
+<button onclick="getLocation()">위치정보 가져오기</button>
+
+<p id="info"></p>
+
+<script>
+var x = document.getElementById("info");
+
+function getLocation() {
+    if (navigator.geolocation){
+        navigator.geolocation.getCurrentPosition(showPostion);
+    } else {
+        x.innerHTML= "본 브라우저는 Geolocation API를 지원하지 않습니다.";
+    }
+}
+fuction showPostion(podition) {
+    var latitude = position.coords.latitude;
+    var longitude = position.coords.longitude;
+
+    x.innerHTML = "위도: " + latitude + "<br>경도: " + longitude;
+}
+</script>
+</body>
+</html>
